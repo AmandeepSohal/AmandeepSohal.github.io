@@ -4,17 +4,15 @@
   <link rel="stylesheet" href="portfolio.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - ePortfolio</title>
-</head>
+  <title>Your Responsive Webpage</title>
+  <link rel="stylesheet" href="style.css">  </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <h2>Your Job Title or Area of Expertise</h2>
-    <nav>
+    <h1>Your Website Title</h1>
+    <button id="menu-toggle">Menu</button>  <nav id="navigation">
       <ul>
-        <li><a href="#about">About Me</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -31,11 +29,6 @@
       <p>Showcase your projects with descriptions, images, and links.</p>
     </section>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <p>List your work experience or relevant projects.</p>
-    </section>
-
     <section id="contact">
       <h2>Contact</h2>
       <p>Provide your contact information or a contact form.</p>
@@ -45,5 +38,12 @@
   <footer>
     <p>Copyright &copy; Your Name -  &#x2026; </p>
   </footer>
+
+  <script>  const menuToggle = document.getElementById('menu-toggle');
+  const navigation = document.getElementById('navigation');
+
+  menuToggle.addEventListener('click', function() {
+    navigation.classList.toggle('active');  });
+  </script>
 </body>
 </html>
