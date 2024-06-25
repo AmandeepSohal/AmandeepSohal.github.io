@@ -3,23 +3,72 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;  /* Light gray background */
 }
 
-header, nav, main, footer {
-  /* styles for these elements */
+header {
+  padding: 10px;
 }
 
-/* styles for smaller screens */
+nav {
+  background-color: #f0f0f0;  /* Light gray background */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;  /* Remove bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;  /* Display navigation items inline */
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;  /* Remove underline from links */
+  color: black;
+}
+
+nav a:hover {
+  color: #333;  /* Change link color on hover */
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;  /* Light gray border */
+}
+
+h2 {
+  margin-top: 0;  /* Reduce top margin for headings */
+  color: #333;  /* Dark gray headings */
+}
+
+p {
+  line-height: 1.5;  /* Increase line spacing for better readability */
+}
+
+img {
+  max-width: 100%;  /* Scale image to fit container */
+  display: block;  /* Images behave like block elements */
+  margin-bottom: 10px;
+  border: 1px solid #ddd;  /* Optional: Add a border */
+  border-radius: 5px;  /* Optional: Add rounded corners */
+}
+
+/* styles for smaller screens (optional - adjust breakpoint as needed) */
 @media (max-width: 768px) {
   header {
-    /* styles specific to small screens */
+    /* Styles for header on small screens (e.g., hamburger menu) */
   }
+  
   nav {
-    /* styles specific to small screens */
+    /* Styles for navigation on small screens (e.g., dropdown menu) */
   }
-}
-
-/* styles for medium screens */
-@media (max-width: 1024px) {
-  /* styles specific to medium screens */
 }
